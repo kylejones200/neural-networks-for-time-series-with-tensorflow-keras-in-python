@@ -53,7 +53,7 @@ def prepare_data(df: pd.DataFrame, value_col: str, lag: int, train_size: float =
     return X_train, X_test, y_train, y_test, scaler
 
 def plot_forecast(actual: np.ndarray, predicted: np.ndarray, title: str, output_path: Path):
- """Plot forecast vs actual """
+    """Plot forecast vs actual """
     fig, ax = plt.subplots(figsize=(10, 6))
     
     ax.plot(actual, label="Actual", color="#4A90A4", linewidth=1.2)

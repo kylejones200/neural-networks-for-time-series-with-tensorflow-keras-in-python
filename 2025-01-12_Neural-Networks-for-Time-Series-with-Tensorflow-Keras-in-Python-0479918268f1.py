@@ -102,42 +102,42 @@ plt.show()
 
 
 
-> The graphs illustrate how neural networks can be great at matching
-> complex time series but with that level of mimicry comes worries about
-> overfitting.
+# > The graphs illustrate how neural networks can be great at matching
+# > complex time series but with that level of mimicry comes worries about
+# > overfitting.
 
-I built these using Tensorflow directly. There are lots of other ways to
-work with neural networks in time series like N-BEATS through Darts.
+# I built these using Tensorflow directly. There are lots of other ways to
+# work with neural networks in time series like N-BEATS through Darts.
 
-[**N-BEATS for Time Series Forecasting in Python**\
-*N-BEATS (Neural Basis Expansion Analysis for Time Series) is a deep
-learning model specifically designed for
-time...*medium.com](https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49 "https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49")[](https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49)
-#### Real world data: ERCOT Load Data
-Initially I used simulated data. But what about real data? Let's use
-data from ERCOT, the grid balancing authority in Texas.
-
-
-<figcaption>Ercot Demand data</figcaption>
+# [**N-BEATS for Time Series Forecasting in Python**\
+# *N-BEATS (Neural Basis Expansion Analysis for Time Series) is a deep
+# learning model specifically designed for
+# time...*medium.com](https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49 "https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49")[](https://medium.com/@kylejones_47003/n-beats-for-time-series-forecasting-in-python-b4a61858fe49)
+#### Real world data: ERCOT Load Data
+# Initially I used simulated data. But what about real data? Let's use
+# data from ERCOT, the grid balancing authority in Texas.
 
 
-The RNN is much better than the basic Neural Network.
+# <figcaption>Ercot Demand data</figcaption>
 
 
-There is no clear benefit from the LSTM versus RNN.
+# The RNN is much better than the basic Neural Network.
 
 
-Both the RNN and LSTM are extremely good at modeling this data.
+# There is no clear benefit from the LSTM versus RNN.
+
+
+# Both the RNN and LSTM are extremely good at modeling this data.
 
 ### So what?
-Neural networks are fast and can handle nonlinear patterns and
-multivariate inputs. Tensorflow (with Keras) is really easy to use. But
-Neural Networks can overfit the data and they are a "black box" so the
-model itself is something we can decompose.
-::::::::::::::::By [Kyle Jones](https://medium.com/@kyle-t-jones) on
-[January 12, 2025](https://medium.com/p/0479918268f1).
+# Neural networks are fast and can handle nonlinear patterns and
+# multivariate inputs. Tensorflow (with Keras) is really easy to use. But
+# Neural Networks can overfit the data and they are a "black box" so the
+# model itself is something we can decompose.
+# ::::::::::::::::By [Kyle Jones](https://medium.com/@kyle-t-jones) on
+# [January 12, 2025](https://medium.com/p/0479918268f1).
 
-[Canonical
-link](https://medium.com/@kyle-t-jones/neural-networks-for-time-series-with-tensorflow-keras-in-python-0479918268f1)
+# [Canonical
+# link](https://medium.com/@kyle-t-jones/neural-networks-for-time-series-with-tensorflow-keras-in-python-0479918268f1)
 
-Exported from [Medium](https://medium.com) on November 10, 2025.
+# Exported from [Medium](https://medium.com) on November 10, 2025.
