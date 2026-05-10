@@ -134,7 +134,7 @@ plt.show()
 # multivariate inputs. Tensorflow (with Keras) is really easy to use. But
 # Neural Networks can overfit the data and they are a "black box" so the
 # model itself is something we can decompose.
-# ::::::::::::::::By [Kyle Jones](https://medium.com/@kyle-t-jones) on
+# By [Kyle Jones](https://medium.com/@kyle-t-jones) on
 # [January 12, 2025](https://medium.com/p/0479918268f1).
 
 # [Canonical
