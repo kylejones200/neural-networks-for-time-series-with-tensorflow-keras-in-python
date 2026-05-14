@@ -9,7 +9,7 @@ Neural networks are good at capturing complex patterns and relationships. They c
 
 There are lots of ways to implement neural networks.
 
-In this project, I build three neural networks using Tensorflow (Keras): basic feedforward neural networks, recurrent neural networks (RNNs), and long short-term memory (LSTM). Exponential Smoothing and ARIMA are great for data with linear patterns, but traditional methods struggle with n**onlinear relationships.** Neural networks can model complex interactions between time-dependent features. Neural networks can also handle multiple inputs (multivartiate data) which will improve forecasting.
+In this project, I build three neural networks using Tensorflow (Keras): basic feedforward neural networks, recurrent neural networks (RNNs), and long short-term memory (LSTM). Exponential Smoothing and ARIMA are great for data with linear patterns, but traditional methods struggle with nonlinear relationships. Neural networks can model complex interactions between time-dependent features. Neural networks can also handle multiple inputs (multivartiate data) which will improve forecasting.
 
 There are also no assumptions of stationarity or predefined trends for Neural Networks. That means we can use them without having to run tests like Dickey-Fuller.
 
@@ -24,7 +24,7 @@ Recurrent neural networks are designed to handle sequential data by maintaining 
 
 
 ### Long Short-Term Memory (LSTM) Networks
-LSTMs are a type of RNN that solve the **vanishing gradient problem** (ohh! ahh!). Basically LSTMs remember previous values which gives them a leg up on other NNs for complex time series with long-range patterns. :::```python """ Long Short-Term Memory (LSTM) Networks for time series """
+LSTMs are a type of RNN that solve the vanishing gradient problem (ohh! ahh!). Basically LSTMs remember previous values which gives them a leg up on other NNs for complex time series with long-range patterns. :::```python """ Long Short-Term Memory (LSTM) Networks for time series """
 
 from tensorflow.keras.layers import LSTM
 
