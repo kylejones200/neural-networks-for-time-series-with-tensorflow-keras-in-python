@@ -3,9 +3,7 @@
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Tuple
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import matplotlib.pyplot as plt
@@ -14,7 +12,7 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
-def create_lagged_features(data: np.ndarray, lag: int) -> Tuple[np.ndarray, np.ndarray]:
+def create_lagged_features(data: np.ndarray, lag: int) -> tuple[np.ndarray, np.ndarray]:
     """Create lagged features for time series."""
     X, y = [], []
     for i in range(lag, len(data)):
@@ -22,7 +20,7 @@ def create_lagged_features(data: np.ndarray, lag: int) -> Tuple[np.ndarray, np.n
         y.append(data[i])
     return np.array(X), np.array(y)
 
-def build_lstm_model(input_shape: Tuple[int, int], units: int = 50) -> Sequential:
+def build_lstm_model(input_shape: tuple[int, int], units: int = 50) -> Sequential:
     """Build LSTM model for time series forecasting."""
     model = Sequential([
         LSTM(units, activation='relu', input_shape=input_shape),
@@ -31,7 +29,7 @@ def build_lstm_model(input_shape: Tuple[int, int], units: int = 50) -> Sequentia
     model.compile(optimizer='adam', loss='mse')
     return model
 
-def prepare_data(df: pd.DataFrame, value_col: str, lag: int, train_size: float = 0.8) -> Tuple:
+def prepare_data(df: pd.DataFrame, value_col: str, lag: int, train_size: float = 0.8) -> tuple:
     """Prepare data for LSTM training."""
     scaler = MinMaxScaler()
     values = df[value_col].values.reshape(-1, 1)

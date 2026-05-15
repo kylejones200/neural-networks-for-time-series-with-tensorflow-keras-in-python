@@ -7,7 +7,6 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.layers import SimpleRNN
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 import tensorflow as tf
 np.random.seed(42)
 
