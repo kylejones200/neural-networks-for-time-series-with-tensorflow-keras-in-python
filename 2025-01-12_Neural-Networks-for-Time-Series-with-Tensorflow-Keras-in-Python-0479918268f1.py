@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+np.random.seed(42)
 
 """
 Feedforward Neural Network for Simple Forecasting
@@ -16,7 +17,6 @@ Feedforward Neural Network for Simple Forecasting
 
 
 # Generate synthetic data
-np.random.seed(42)
 time = np.arange(100)
 data = 10 + 0.5 * time + np.sin(0.2 * time) + np.random.normal(scale=1.0, size=100)
 
