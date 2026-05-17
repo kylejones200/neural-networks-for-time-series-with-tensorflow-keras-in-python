@@ -83,7 +83,7 @@ def build_lstm_model(input_shape: tuple[int, int], units: int = 50) -> Sequentia
     model = Sequential(
         [LSTM(units, activation="relu", input_shape=input_shape), Dense(1)]
     )
-        return model
+    return model
 
 
 def prepare_data(

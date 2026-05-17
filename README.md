@@ -43,3 +43,11 @@ Long Short-Term Memory networks:
 - LSTM training can be slow for large datasets.
 - Requires sufficient data for training and validation.
 - GPU recommended for faster training but not required.
+
+## Disclaimer
+
+Educational/demo code only. Not financial, safety, or engineering advice. Use at your own risk. Verify results independently before any production or operational use.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
