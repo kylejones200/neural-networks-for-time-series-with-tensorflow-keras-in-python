@@ -310,7 +310,6 @@ future_predictions = []
 
 # Context manager to ignore the specific warning
 with warnings.catch_warnings():
-    warnings.filterwarnings("ignore", category=UserWarning)
 
     for _ in range(future_steps):
         # Scale the input
@@ -376,7 +375,6 @@ prediction_std = []
 
 # Context manager to ignore the specific warning
 with warnings.catch_warnings():
-    warnings.filterwarnings("ignore", category=UserWarning)
 
     for step in range(future_steps):
         # Scale the input
